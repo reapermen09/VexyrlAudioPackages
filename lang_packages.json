@@ -20,34 +20,6 @@
       "url": "langs/VxMelody/VxMelody_v1.0.so",
       "sha256": "0b0ea517ed69dcf1ff542bec10e99da9d2038b9d2cf6bf5a7091c82b501e5b1a",
       "version": "1.0"
-    },
-    {
-      "name": "VxMelody2",
-      "description": "Sketch Melodies quickly!",
-      "url": "langs/VxMelody/VxMelody_v1.0.so",
-      "sha256": "0b0ea517ed69dcf1ff542bec10e99da9d2038b9d2cf6bf5a7091c82b501e5b1a",
-      "version": "1.0"
-    },
-    {
-      "name": "VxMelody3",
-      "description": "Sketch Melodies quickly!",
-      "url": "langs/VxMelody/VxMelody_v1.0.so",
-      "sha256": "0b0ea517ed69dcf1ff542bec10e99da9d2038b9d2cf6bf5a7091c82b501e5b1a",
-      "version": "1.0"
-    },
-    {
-      "name": "VxMelody4",
-      "description": "Sketch Melodies quickly!",
-      "url": "langs/VxMelody/VxMelody_v1.0.so",
-      "sha256": "0b0ea517ed69dcf1ff542bec10e99da9d2038b9d2cf6bf5a7091c82b501e5b1a",
-      "version": "1.0"
-    },
-    {
-      "name": "VxMelody5",
-      "description": "Sketch Melodies quickly!",
-      "url": "langs/VxMelody/VxMelody_v1.0.so",
-      "sha256": "0b0ea517ed69dcf1ff542bec10e99da9d2038b9d2cf6bf5a7091c82b501e5b1a",
-      "version": "1.0"
     }
   ]
 }
