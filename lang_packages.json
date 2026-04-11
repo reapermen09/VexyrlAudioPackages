@@ -4,18 +4,21 @@
       "name": "VxLanguage",
       "description": "Main Programming Language!",
       "url": "langs/VxLanguage/VxLanguage_v1.0.so",
+      "sha256": "d08267b01942fd8f9ee23fd934d969fcfc8af0a1a911e3220445d98a6407a556",
       "version": "1.0"
     },
     {
       "name": "VxClassic",
       "description": "Classic Programming Language!",
       "url": "langs/VxClassic/VxClassic_v1.0.so",
+      "sha256": "81675ee463a03d8e0d7596c0417b4b48accb281f9a876e55a4109a3580fd9824",
       "version": "1.0"
     },
     {
       "name": "VxMelody",
       "description": "Sketch Melodies quickly!",
       "url": "langs/VxMelody/VxMelody_v1.0.so",
+      "sha256": "0b0ea517ed69dcf1ff542bec10e99da9d2038b9d2cf6bf5a7091c82b501e5b1a",
       "version": "1.0"
     }
   ]
