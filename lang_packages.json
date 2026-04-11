@@ -3,17 +3,17 @@
     {
       "name": "VxLanguage",
       "description": "Main Programming Language!",
-      "url": "langs/VxLanguage_v1.0.so"
+      "url": "langs/VxLanguage/VxLanguage_v1.0.so"
     },
     {
       "name": "VxClassic",
       "description": "Classic Programming Language!",
-      "url": "langs/VxClassic_v1.0.so"
+      "url": "langs/VxClassic/VxClassic_v1.0.so"
     },
     {
       "name": "VxMelody",
       "description": "Sketch Melodies quickly!",
-      "url": "langs/VxMelody_v1.0.so"
+      "url": "langs/VxMelody/VxMelody_v1.0.so"
     }
   ]
 }
