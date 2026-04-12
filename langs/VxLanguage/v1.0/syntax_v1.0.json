@@ -1,0 +1,113 @@
+{
+  "name": "VxLanguage",
+  "caseInsensitive": true,
+  "numbers": true,
+
+  "keywords": [
+    "tempo",
+    "volume",
+    "reverb",
+    "rest",
+    "pitch",
+    "play",
+    "startpos",
+    "section",
+    "override",
+    "midi"
+  ],
+
+  "types": [],
+  "builtins": [],
+  "constants": [],
+  "directives": [],
+
+  "lineComments": [
+    "//",
+    "#"
+  ],
+
+  "stringDelimiters": [],
+
+  "blockStart": "(",
+  "blockEnd": ")",
+
+  "operators": [
+    "\\+",
+    "\\-",
+    "=",
+    ":",
+    "\\^",
+    ",",
+    "\\*"
+  ],
+
+  "styles": {
+    "comment": "#05A005",
+    "keyword": "#6495ED",
+    "parameter": "#D2691E",
+    "namespace": "#87CEFA",
+    "instrument": "#00FF7F",
+    "note": "#DDA0DD",
+    "number": "#FF8C00",
+    "operator": "#FFFF00",
+    "bracket_square": "#808080",
+    "bracket_paren": "#AEAEAE",
+    "bracket_curly": "#DDDDDD",
+    "punctuation": "#A0A0A0",
+    "default": "#D4D4D4"
+  },
+
+  "patterns": [
+    {
+      "name": "custom_id",
+      "regex": "\\b(?!(?:tempo|volume|rest|pitch|play|startpos|section|override|midi)\\b)[A-Za-z_][A-Za-z0-9_]*\\b",
+      "style": "note"
+    },
+    {
+      "name": "parameter",
+      "regex": "\\.(beats|length|len|del|delay|start|vel|velocity|volume|vol|att|attack|rel|release|rev|reverb|revtype|pitch|pit|cents|bend|pan|vlow|low|mid|high|vhigh)\\b",
+      "style": "parameter"
+    },
+    {
+      "name": "note_token",
+      "regex": "\\b[A-G][#b]?[0-9]\\b|\\.[A-Za-z_][A-Za-z0-9_]*\\b",
+      "style": "note"
+    },
+    {
+      "name": "bracket_curly",
+      "regex": "[\\{\\}]",
+      "style": "bracket_curly"
+    },
+    {
+      "name": "bracket_paren",
+      "regex": "[\\(\\)]",
+      "style": "bracket_paren"
+    },
+    {
+      "name": "bracket_square",
+      "regex": "[\\[\\]]",
+      "style": "bracket_square"
+    },
+    {
+      "name": "bracket_angle",
+      "regex": "[<>]",
+      "style": "bracket_square"
+    },
+    {
+      "name": "instrument_block",
+      "regex": "\\b([A-Za-z_][A-Za-z0-9_]*)\\s*<\\s*([A-Za-z0-9_]+)\\s*>",
+      "groups": {
+        "1": "namespace",
+        "2": "instrument"
+      }
+    }
+  ],
+
+  "rules": {
+    "highlightBlocks": true,
+    "highlightNotes": true,
+    "highlightBrackets": true,
+    "highlightInstruments": true,
+    "highlightParameters": true
+  }
+}
