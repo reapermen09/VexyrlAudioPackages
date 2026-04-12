@@ -3,7 +3,7 @@
     {
       "name": "VxLanguage",
       "description": "The main programming language, which I've spent hours on!",
-      "url": "langs/VxLanguage/v1.0/VxLanguagev1.0.so",
+      "url": "langs/VxLanguage/v1.0/VxLanguage_v1.0.so",
       "sha256": "d820d5b7d05dd0f78eaf08562e354e38284ce9535cbba2637e815876bc719881",
       "version": "1.0"
     },
