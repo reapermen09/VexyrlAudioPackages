@@ -1,10 +1,24 @@
 {
   "languages": [
     {
+      "name": "VxLanguage",
+      "description": "The main programming language, which I've spent hours on!",
+      "url": "langs/VxLanguage/v1.0/VxLanguagev1.0.so",
+      "sha256": "d820d5b7d05dd0f78eaf08562e354e38284ce9535cbba2637e815876bc719881",
+      "version": "1.0"
+    },
+    {
+      "name": "VxMelody",
+      "description": "Made as a melody sketcher to write ideas down quickly!",
+      "url": "langs/VxMelody/v1.0/VxMelody_v1.0.so",
+      "sha256": "fe0214b2a85da04490d9a6baa2dc581c589a931fabf880050565c3052c297aaa",
+      "version": "1.0"
+    },
+    {
       "name": "VxClassic",
-      "description": "Classic Programming Language!",
+      "description": "The classic Vexyrl Audio experience before it was released!",
       "url": "langs/VxClassic/v1.0/VxClassic_v1.0.so",
-      "sha256": "92481265417b39cfece7b80dbed40ceac9dbc6c50d739a7c292ff9c4b5ec7bc3",
+      "sha256": "3565fb226cb39e112b260092ac278a71f41342418421ed75aef4330f2845f2fd",
       "version": "1.0"
     }
   ]
