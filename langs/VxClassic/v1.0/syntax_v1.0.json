@@ -1,96 +1,105 @@
 {
-    "name": "VxClassic",
-    "caseInsensitive": true,
-    "numbers": true,
-    "keywords": [
-      "tempo",
-      "volume",
-      "reverb",
-      "rest",
-      "startpos",
-      "midi"
-    ],
-    "types": [],
-    "builtins": [],
-    "constants": [],
-    "directives": [],
-    "lineComments": [
-      "//",
-      "#"
-    ],
-    "stringDelimiters": [],
-    "blockStart": "(",
-    "blockEnd": ")",
-    "operators": [
-      "\\+",
-      "\\-",
-      "=",
-      ":",
-      "'",
-      "\\?",
-      "\\^",
-      "@",
-      ","
-    ],
-    "styles": {
-      "comment": "#888888",
-      "keyword": "#E5C07B",
-      "parameter": "#D19A66",
-      "namespace": "#61AFEF",
-      "instrument": "#E06C75",
-      "note": "#98C379",
-      "number": "#56B6C2",
-      "operator": "#C678DD",
-      "bracket_square": "#ABB2BF",
-      "bracket_paren": "#ABB2BF",
-      "bracket_curly": "#ABB2BF",
-      "punctuation": "#ABB2BF",
-      "default": "#ABB2BF"
-    },
-    "patterns": [
-      {
-        "name": "instrument_block",
-        "regex": "\\b([A-Za-z_][A-Za-z0-9_]*)\\s*(<)\\s*([A-Za-z0-9_]+)\\s*(>)",
-        "groups": {
-          "1": "namespace",
-          "2": "bracket_square",
-          "3": "instrument",
-          "4": "bracket_square"
-        }
-      },
-      {
-        "name": "classic_instrument_fallback",
-        "regex": "\\b(?!(?:tempo|volume|reverb|rest|startpos|midi)\\b)([A-Za-z_][A-Za-z0-9_]*)\\s*\\(",
-        "groups": {
-          "1": "instrument"
-        }
-      },
-      {
-        "name": "note_token",
-        "regex": "\\b[A-G][#b]?[0-9]\\b|\\.[A-Za-z_][A-Za-z0-9_]*\\b",
-        "style": "note"
-      },
-      {
-        "name": "classic_operators",
-        "regex": "[':\\?=@\\^,]",
-        "style": "operator"
-      },
-      {
-        "name": "bracket_curly",
-        "regex": "[\\{\\}]",
-        "style": "bracket_curly"
-      },
-      {
-        "name": "bracket_paren",
-        "regex": "[\\(\\)]",
-        "style": "bracket_paren"
+  "name": "VxClassic",
+  "caseInsensitive": true,
+  "numbers": true,
+
+  "keywords": [
+    "tempo",
+    "volume",
+    "reverb",
+    "rest",
+    "startpos",
+    "midi"
+  ],
+
+  "types": [],
+  "builtins": [],
+  "constants": [],
+  "directives": [],
+
+  "lineComments": [
+    "//",
+    "#"
+  ],
+
+  "stringDelimiters": [],
+
+  "blockStart": "(",
+  "blockEnd": ")",
+
+  "operators": [
+    "\\+",
+    "\\-",
+    "=",
+    ":",
+    "'",
+    "\\?",
+    "\\^",
+    "@",
+    ","
+  ],
+
+  "styles": {
+    "comment": "#888888",
+    "keyword": "#E5C07B",
+    "parameter": "#D19A66",
+    "namespace": "#61AFEF",
+    "instrument": "#E06C75",
+    "note": "#98C379",
+    "number": "#56B6C2",
+    "operator": "#C678DD",
+    "bracket_square": "#ABB2BF",
+    "bracket_paren": "#ABB2BF",
+    "bracket_curly": "#ABB2BF",
+    "punctuation": "#ABB2BF",
+    "default": "#ABB2BF"
+  },
+
+  "patterns": [
+    {
+      "name": "instrument_block",
+      "regex": "\\b([A-Za-z_][A-Za-z0-9_]*)\\s*(<)\\s*([A-Za-z0-9_]+)\\s*(>)",
+      "groups": {
+        "1": "namespace",
+        "2": "bracket_square",
+        "3": "instrument",
+        "4": "bracket_square"
       }
-    ],
-    "rules": {
-      "highlightBlocks": true,
-      "highlightNotes": true,
-      "highlightBrackets": false,
-      "highlightInstruments": false,
-      "highlightParameters": false
+    },
+    {
+      "name": "classic_instrument_fallback",
+      "regex": "\\b(?!(?:tempo|volume|reverb|rest|startpos|midi)\\b)([A-Za-z_][A-Za-z0-9_]*)\\s*\\(",
+      "groups": {
+        "1": "instrument"
+      }
+    },
+    {
+      "name": "note_token",
+      "regex": "\\b[A-G][#b]?[0-9]\\b|\\.[A-Za-z_][A-Za-z0-9_]*\\b",
+      "style": "note"
+    },
+    {
+      "name": "classic_operators",
+      "regex": "[':\\?=@\\^,]",
+      "style": "operator"
+    },
+    {
+      "name": "bracket_curly",
+      "regex": "[\\{\\}]",
+      "style": "bracket_curly"
+    },
+    {
+      "name": "bracket_paren",
+      "regex": "[\\(\\)]",
+      "style": "bracket_paren"
     }
+  ],
+
+  "rules": {
+    "highlightBlocks": true,
+    "highlightNotes": true,
+    "highlightBrackets": false,
+    "highlightInstruments": false,
+    "highlightParameters": false
+  }
 }
