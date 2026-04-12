@@ -39,6 +39,11 @@ midi Basic<Piano>[piano]
 midi Basic<UprightPiano>[piano]+
 midi Lushreal<Piano>[piano]+
 
+// Piano and Upright piano in same channel, Lushreal Piano in a different one!
+midi Basic<Piano>[piano]
+midi Basic<UprightPiano>[piano]
+midi Lushreal<Piano>[piano]+
+
 // drums!
 
 midi Basic<StandardDrums>[drum]
