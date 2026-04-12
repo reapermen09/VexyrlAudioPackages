@@ -1,6 +1,4 @@
 {
-  "name": "VxClassic",
-  "version": "1.0",
   "caseInsensitive": true,
   "numbers": true,
 
@@ -47,7 +45,7 @@
     "number": "#B5CEA8",
     "operator": "#D4D4D4",
     "punctuation": "#A0A0A0",
-    "instrument": "#CE9178",
+    "instrument": "#42B3F5",
     "note": "#C586C0",
     "default": "#D4D4D4"
   },
@@ -55,8 +53,9 @@
   "patterns": [
     {
       "name": "instrument_block",
-      "regex": "(^|\\s)([A-Za-z_][A-Za-z0-9_\\-]*)\\s*(?=\\()",
+      "regex": "\\b([A-Za-z_][A-Za-z0-9_]*)<([A-Za-z0-9_]+)>",
       "groups": {
+        "1": "keyword",
         "2": "instrument"
       }
     },
