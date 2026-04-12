@@ -1,0 +1,89 @@
+{
+  "name": "VxMelody",
+  "caseInsensitive": true,
+  "numbers": true,
+
+  "keywords": [
+    "tempo",
+    "delay",
+    "length",
+    "volume",
+    "reverb",
+    "rest",
+    "startpos",
+    "instrument",
+    "inst",
+    "override",
+    "ovr",
+    "midi"
+  ],
+
+  "types": [],
+  "builtins": [],
+  "constants": [],
+  "directives": [],
+
+  "lineComments": [
+    "//",
+    "#"
+  ],
+
+  "stringDelimiters": [],
+
+  "blockStart": "",
+  "blockEnd": "",
+
+  "operators": [
+    "\\+",
+    "\\-",
+    "=",
+    ":"
+  ],
+
+  "styles": {
+    "comment": "#6272A4",
+    "keyword": "#FF79C6",
+    "parameter": "#FFB86C",
+    "namespace": "#8BE9FD",
+    "instrument": "#50FA7B",
+    "note": "#F1FA8C",
+    "number": "#BD93F9",
+    "operator": "#FFB86C",
+    "bracket_square": "#F8F8F2",
+    "bracket_paren": "#F8F8F2",
+    "bracket_curly": "#F8F8F2",
+    "punctuation": "#F8F8F2",
+    "default": "#F8F8F2"
+  },
+
+  "patterns": [
+    {
+      "name": "instrument_block",
+      "regex": "\\b([A-Za-z_][A-Za-z0-9_]*)\\s*(<)\\s*([A-Za-z0-9_]+)\\s*(>)",
+      "groups": {
+        "1": "namespace",
+        "2": "bracket_square",
+        "3": "instrument",
+        "4": "bracket_square"
+      }
+    },
+    {
+      "name": "note_token",
+      "regex": "\\b[A-G][#b]?[0-9]\\b|\\.[A-Za-z_][A-Za-z0-9_]*\\b",
+      "style": "note"
+    },
+    {
+      "name": "custom_id",
+      "regex": "\\b(?!(?:tempo|delay|length|volume|reverb|rest|startpos|instrument|inst|override|ovr|midi)\\b)[A-Za-z_][A-Za-z0-9_]*\\b",
+      "style": "note"
+    }
+  ],
+
+  "rules": {
+    "highlightBlocks": false,
+    "highlightNotes": true,
+    "highlightBrackets": false,
+    "highlightInstruments": true,
+    "highlightParameters": false
+  }
+}
