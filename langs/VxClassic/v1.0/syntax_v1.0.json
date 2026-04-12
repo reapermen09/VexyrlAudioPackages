@@ -1,0 +1,92 @@
+{
+  "name": "VxClassic",
+  "version": "1.0",
+  "caseInsensitive": true,
+  "numbers": true,
+
+  "keywords": [
+    "TEMPO",
+    "VOLUME",
+    "REVERB",
+    "REST",
+    "STARTPOS"
+  ],
+
+  "types": [],
+  "builtins": [],
+  "constants": [],
+  "directives": [],
+
+  "lineComments": [
+    "//",
+    "#"
+  ],
+
+  "stringDelimiters": [],
+
+  "blockStart": "(",
+  "blockEnd": ")",
+
+  "operators": [
+    "+",
+    ",",
+    ":",
+    "?",
+    "=",
+    "@",
+    "^",
+    "[",
+    "]",
+    "-"
+  ],
+
+  "styles": {
+    "keyword": "#569CD6",
+    "string": "#CE9178",
+    "comment": "#6A9955",
+    "number": "#B5CEA8",
+    "operator": "#D4D4D4",
+    "punctuation": "#A0A0A0",
+    "instrument": "#CE9178",
+    "note": "#C586C0",
+    "default": "#D4D4D4"
+  },
+
+  "patterns": [
+    {
+      "name": "instrument_block",
+      "regex": "(^|\\s)([A-Za-z_][A-Za-z0-9_\\-]*)\\s*(?=\\()",
+      "groups": {
+        "2": "instrument"
+      }
+    },
+    {
+      "name": "note_token",
+      "regex": "(?<!\\w)(?:[A-G][#b]?[0-9]|\\.[A-Za-z_][A-Za-z0-9_]*|\\[[^\\]]+\\])",
+      "style": "note"
+    },
+    {
+      "name": "parameter_symbols",
+      "regex": "[:\\?=@\\^]",
+      "style": "operator"
+    },
+    {
+      "name": "rest_keyword",
+      "regex": "\\bREST\\b",
+      "style": "keyword"
+    },
+    {
+      "name": "tempo_volume_reverb",
+      "regex": "\\b(TEMPO|VOLUME|REVERB|STARTPOS)\\b",
+      "style": "keyword"
+    }
+  ],
+
+  "rules": {
+    "highlightBlocks": true,
+    "highlightNotes": true,
+    "highlightBrackets": true,
+    "highlightInstruments": true,
+    "highlightParameters": true
+  }
+}
