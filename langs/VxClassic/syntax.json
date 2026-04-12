@@ -1,0 +1,71 @@
+{
+  "name": "VxClassic",
+  "version": "1.0",
+  "caseInsensitive": true,
+  "numbersEnabled": true,
+
+  "keywords": [
+    "TEMPO",
+    "VOLUME",
+    "REVERB",
+    "REST",
+    "STARTPOS"
+  ],
+
+  "builtins": [],
+  "types": [],
+  "constants": [],
+  "directives": [],
+
+  "lineComments": [
+    "//",
+    "#"
+  ],
+
+  "stringDelimiters": [
+    "\""
+  ],
+
+  "blockStart": "(",
+  "blockEnd": ")",
+
+  "operators": [
+    "+",
+    ",",
+    ":",
+    "?",
+    "=",
+    "@",
+    "^",
+    "<",
+    ">"
+  ],
+
+  "styles": {
+    "keyword": "#569CD6",
+    "builtin": "#9CDCFE",
+    "namespace": "#4FC1FF",
+    "instrument": "#C586C0",
+    "number": "#B5CEA8",
+    "operator": "#D4D4D4",
+    "comment": "#6A9955",
+    "string": "#CE9178"
+  },
+
+  "patterns": [
+    {
+      "name": "namespaceInstrument",
+      "regex": "\\b([A-Za-z_][A-Za-z0-9_]*)\\s*<\\s*([A-Za-z_][A-Za-z0-9_]*)\\s*>",
+      "style": "operator",
+      "groups": {
+        "1": "namespace",
+        "2": "instrument"
+      }
+    },
+    {
+      "name": "noteToken",
+      "regex": "\\b[A-G][#b]?[0-9]\\b",
+      "style": "builtin"
+    }
+  ]
+}
