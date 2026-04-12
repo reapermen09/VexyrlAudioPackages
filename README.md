@@ -23,3 +23,26 @@ const char* getName();
 
 const char* getDescription();
 ```
+MIDI:
+
+```
+
+// by default, all midi channels are combined! you must seperate them!
+
+// combined in the same channel!
+midi Basic<Piano>[piano]
+midi Basic<UprightPiano>[piano]
+midi Lushreal<Piano>[piano]
+
+// all different channels
+midi Basic<Piano>[piano]
+midi Basic<UprightPiano>[piano]+
+midi Lushreal<Piano>[piano]+
+
+// drums!
+
+midi Basic<StandardDrums>[drum]
+
+```
+
+Your code is expected to follow these requirements before publishing!
