@@ -15,7 +15,7 @@ void interpret(
     std::vector<std::string>& revtypes, std::vector<double>& pitches,
     std::vector<double>& attacks, std::vector<double>& releases,
     std::vector<double>& tempos
-); // YOU MUST CONVERT 'lengths' and 'starts' to beats!
+); // YOU MUST CONVERT 'lengths' and 'starts' to seconds!
 
 const char* exportMidi(const std::vector<std::string>& code, int* outSize);
 
