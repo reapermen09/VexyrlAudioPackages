@@ -1,0 +1,101 @@
+{
+    "blockEnd": ")",
+    "blockStart": "(",
+    "builtins": [
+    ],
+    "caseInsensitive": true,
+    "constants": [
+    ],
+    "directives": [
+    ],
+    "keywords": [
+        "tempo",
+        "volume",
+        "reverb",
+        "rest",
+        "startpos",
+        "midi"
+    ],
+    "lineComments": [
+        "//",
+        "#"
+    ],
+    "name": "VxClassic",
+    "numbers": true,
+    "operators": [
+        "\\+",
+        "\\-",
+        "=",
+        ":",
+        "'",
+        "\\?",
+        "\\^",
+        "@",
+        ","
+    ],
+    "patterns": [
+        {
+            "groups": {
+                "1": "namespace",
+                "2": "bracket_square",
+                "3": "instrument",
+                "4": "bracket_square"
+            },
+            "name": "instrument_block",
+            "regex": "\\b([A-Za-z_][A-Za-z0-9_]*)\\s*(<)\\s*([A-Za-z0-9_]+)\\s*(>)"
+        },
+        {
+            "groups": {
+                "1": "instrument"
+            },
+            "name": "classic_instrument_fallback",
+            "regex": "\\b(?!(?:tempo|volume|reverb|rest|startpos|midi)\\b)([A-Za-z_][A-Za-z0-9_]*)\\s*\\("
+        },
+        {
+            "name": "note_token",
+            "regex": "\\b[A-G][#b]?[0-9]\\b|\\.[A-Za-z_][A-Za-z0-9_]*\\b",
+            "style": "note"
+        },
+        {
+            "name": "classic_operators",
+            "regex": "[':\\?=@\\^,]",
+            "style": "operator"
+        },
+        {
+            "name": "bracket_curly",
+            "regex": "[\\{\\}]",
+            "style": "bracket_curly"
+        },
+        {
+            "name": "bracket_paren",
+            "regex": "[\\(\\)]",
+            "style": "bracket_paren"
+        }
+    ],
+    "rules": {
+        "highlightBlocks": true,
+        "highlightBrackets": false,
+        "highlightInstruments": false,
+        "highlightNotes": true,
+        "highlightParameters": false
+    },
+    "stringDelimiters": [
+    ],
+    "styles": {
+        "bracket_curly": "#ABB2BF",
+        "bracket_paren": "#ABB2BF",
+        "bracket_square": "#ABB2BF",
+        "comment": "#888888",
+        "default": "#ABB2BF",
+        "instrument": "#E06C75",
+        "keyword": "#E5C07B",
+        "namespace": "#61AFEF",
+        "note": "#98C379",
+        "number": "#56B6C2",
+        "operator": "#C678DD",
+        "parameter": "#D19A66",
+        "punctuation": "#ABB2BF"
+    },
+    "types": [
+    ]
+}
