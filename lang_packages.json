@@ -17,13 +17,6 @@
     {
       "name": "VxClassic",
       "description": "The classic Vexyrl Audio experience before it was released!",
-      "url": "langs/VxClassic/v1.1/VxClassic_v1.1.so",
-      "sha256": "3565fb226cb39e112b260092ac278a71f41342418421ed75aef4330f2845f2fd",
-      "version": "1.1"
-    },
-    {
-      "name": "VxClassicc",
-      "description": "The classic Vexyrl Audio experience before it was released!",
       "url": "langs/VxClassic/v1.0/VxClassic_v1.0.so",
       "sha256": "3565fb226cb39e112b260092ac278a71f41342418421ed75aef4330f2845f2fd",
       "version": "1.0"
