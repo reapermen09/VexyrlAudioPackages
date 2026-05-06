@@ -1,6 +1,7 @@
 {
   "languages": [
     {
+      "author": "Reapermen",
       "name": "VxLanguage",
       "description": "The main programming language, which I've spent hours on!",
       "url": "langs/VxLanguage/v1.0/VxLanguage_v1.0.so",
@@ -8,6 +9,7 @@
       "version": "1.0"
     },
     {
+      "author": "Reapermen",
       "name": "VxMelody",
       "description": "Made as a melody sketcher to write ideas down quickly!",
       "url": "langs/VxMelody/v1.0/VxMelody_v1.0.so",
@@ -15,6 +17,7 @@
       "version": "1.0"
     },
     {
+      "author": "Reapermen",
       "name": "VxClassic",
       "description": "The classic Vexyrl Audio experience before it was released!",
       "url": "langs/VxClassic/v1.0/VxClassic_v1.0.so",
