@@ -3,9 +3,9 @@
     {
       "author": "Reapermen",
       "name": "VxLanguage",
-      "description": "The main programming language, which I've spent hours on! I AM TESTING IF MULTIPLE LINES WORK! I AM TESTING IF MULTIPLE LINES WORK! I AM TESTING IF MULTIPLE LINES WORK! I AM TESTING IF MULTIPLE LINES WORK! ",
+      "description": "The main programming language of Vexyrl Audio Environment!",
       "url": "langs/VxLanguage/v1.0/VxLanguage_v1.0.so",
-      "sha256": "d820d5b7d05dd0f78eaf08562e354e38284ce9535cbba2637e815876bc719881",
+      "sha256": "20da8e41ab4eb3f27529fbd85346f67ba7a1462323ec0085d730d26fbbc94830",
       "version": "1.0"
     },
     {
@@ -13,15 +13,15 @@
       "name": "VxMelody",
       "description": "Made as a melody sketcher to write ideas down quickly!",
       "url": "langs/VxMelody/v1.0/VxMelody_v1.0.so",
-      "sha256": "fe0214b2a85da04490d9a6baa2dc581c589a931fabf880050565c3052c297aaa",
+      "sha256": "dd37828f117f340ff9b660885feaf175f3c77135c15c2c2aa16c2275e0dbef60",
       "version": "1.0"
     },
     {
       "author": "Reapermen",
       "name": "VxClassic",
-      "description": "The classic Vexyrl Audio experience before it was released!",
+      "description": "The classic Vexyrl Audio experience before even Vexyrl Audio DAW (VxAD) was released!",
       "url": "langs/VxClassic/v1.0/VxClassic_v1.0.so",
-      "sha256": "3565fb226cb39e112b260092ac278a71f41342418421ed75aef4330f2845f2fd",
+      "sha256": "9213a474fa29dcdfa2345e2122554f4e1209632ceddc545917fa5eb36cce1023",
       "version": "1.0"
     }
   ]
