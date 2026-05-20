@@ -13,7 +13,7 @@
       "name": "VxMelody",
       "description": "Made as a melody sketcher to write ideas down quickly!",
       "url": "langs/VxMelody/v1.0/VxMelody_v1.0.so",
-      "sha256": "dd37828f117f340ff9b660885feaf175f3c77135c15c2c2aa16c2275e0dbef60",
+      "sha256": "f97ab298a22518495eddc1c2a66ece0db5dd9dd5598ab772033a43c7b8a968f6",
       "version": "1.0"
     },
     {
@@ -21,7 +21,7 @@
       "name": "VxClassic",
       "description": "The classic Vexyrl Audio experience before even Vexyrl Audio DAW (VxAD) was released!",
       "url": "langs/VxClassic/v1.0/VxClassic_v1.0.so",
-      "sha256": "9213a474fa29dcdfa2345e2122554f4e1209632ceddc545917fa5eb36cce1023",
+      "sha256": "710e86bd941c57ac3d4c48a6afa5f6d1ddb1492a325c6a960ad26000d93204a4",
       "version": "1.0"
     }
   ]
