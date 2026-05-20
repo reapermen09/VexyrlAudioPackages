@@ -1,10 +1,10 @@
 {
-  "licenses": [
-    {
-      "licenseId": "REAPERMENOFFICIALLICENSE",
-      "tier": "professional",
-      "machineHash": "8385970AC6454EF3FD6714EDE"
-    }
-  ],
-  "signature": "none"
+    "licenses": [
+        {
+            "licenseId": "REAPERMENOFFICIALLICENSEE",
+            "machineHash": "8385970AC6454EF3FD6714EDE",
+            "signature": "fkE0zr/QQLNUXG8XlkzZPv1ZYMsGysgSk9H9+zj9zKx32YMrlFYbZZ8WBhop1oWW8nFrJDwNYPPJJPcB3JFqBg==",
+            "tier": "professional"
+        }
+    ]
 }
